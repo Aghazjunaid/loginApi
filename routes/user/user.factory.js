@@ -25,7 +25,6 @@ module.exports = ({
                 opt.password = await bcrypt.hashSync(opt.password, salt);
                 user = new User(opt);
                 user = await user.save();
-                user._doc.token = token;
                 return_response["status"] = 200;
                 return_response["message"] = "success";
                 return_response["data"] = user;
