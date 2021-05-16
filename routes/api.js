@@ -11,3 +11,6 @@ apiRouter.get('', (req, res) => {
 //============user api============================
 apiRouter.post('/register', user.registerUser);
 apiRouter.get('/login', user.loginUser);
+
+
+module.exports = apiRouter;
