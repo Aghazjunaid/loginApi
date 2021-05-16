@@ -6,7 +6,7 @@ var apiRouter = require("./routes/api");
 
 const PORT = process.env.PORT || 6000
 
-// testScore is our database name in mongodb
+// projectDB is our database name in mongodb
 var connectionString = "mongodb://localhost:27017/projectDB";
 // Mongoose setup and config.
 mongoose.set('useNewUrlParser', true);
